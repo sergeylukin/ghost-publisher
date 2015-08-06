@@ -3,6 +3,15 @@
 
 Publish drafts with `published_at` > current datetime
 
+## WARNING
+
+This package is really really unreliable! I don't recomment you using it. It's
+using a very brute force method to do it's job currently and it's not what you
+want to use in production! Please keep this in mind.
+
+I'm still working on better approach and will update this package as soon as
+I come up with something.
+
 ## Installation
 
     $ npm install -g ghost-publisher
