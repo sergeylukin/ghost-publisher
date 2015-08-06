@@ -1,0 +1,30 @@
+{
+  "name":"ghost-publisher",
+  "version": "0.1.1",
+  "description": "Publish scheduled Ghost posts",
+  "keywords": [
+    "ghost",
+    "schedule"
+    ],
+  "author": "Sergey Lukin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sergeylukin/ghost-publisher/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sergeylukin/ghost-publisher.git"
+  },
+  "homepage": "https://github.com/sergeylukin/ghost-publisher",
+  "dependencies": {
+    "nodesql": "0.2.4",
+    "sqlite3": "3.0.8",
+    "commander": "~2.2.0",
+    "dateformat": "~1.0.8-1.2.3"
+  },
+  "preferGlobal": "true",
+  "main": "lib/ghost-publisher",
+  "bin": {
+    "ghost-publisher": "bin/cli.js"
+  }
+}
