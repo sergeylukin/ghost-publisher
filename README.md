@@ -24,6 +24,24 @@ Alternatively, you can `require('ghost-publisher')` and use it in your own scrip
       file: 'ghost-dev.db'
     });
 
+## Pitfalls
+
+Please note that as of Ghost `v0.6.4` you cannot set future `published_at`
+value.
+
+The dirty fix is to open `/path/to/ghost/blog/core/built/assets/ghost.js` and remove these lines:
+
+```
+if (newPublishedAt.diff(new Date(), "h") > 0) {
+  errMessage = "Published Date cannot currently be in the future.";
+}
+```
+
+Same piece of logic should be removed from `/path/to/ghost/blog/core/built/assets/ghost.min.js`
+
+I hope there will be more elegant solution in the future, so do that at your
+own risk.
+
 ## Contributing
 
 1. Fork it
